@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment - SakhiHealth</title>
+    <link rel="stylesheet" href="ss.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to bottom, #f9f9f9, #f2f2f2), url('feature.jpg');
+
+            background-size: cover;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #9c2663; 
+            color: rgb(247, 247, 247);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        header nav {
+            margin-top: 10px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 0 10px;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            background-color: rgba(248, 241, 250, 0.8); /* Slight transparency to see the background image */
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        h2 {
+            color: #901d58; 
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        label {
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: left;
+            width: 100%;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        input, select, textarea {
+            margin-top: 8px;
+        }
+
+        button {
+            background-color: #D5006D; 
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 14px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FF4081; 
+            transform: translateY(-2px);
+        }
+
+        .note {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                width: 100%;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            button {
+                font-size: 1rem;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #923364; 
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        SakhiHealth - Doctor Appointment
+        <nav>
+            <a href="ss.html">Home</a> |
+            <a href="features.html">Features</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <p>Schedule a consultation with a healthcare provider for personalized advice, diagnosis, and treatment options.</p>
+            
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="specialization">Select Specialization:</label>
+                <select id="specialization" name="specialization" required>
+                    <option value="general">General Medicine</option>
+                    <option value="gynecology">Gynecology</option>
+                    <option value="mental-health">Mental Health</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="nutrition">Nutrition</option>
+                </select>
+
+                <label for="date">Preferred Appointment Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="message">Additional Notes:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Mention any specific concerns or symptoms..."></textarea>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+
+            <p class="note">* We will contact you within 24 hours to confirm your appointment details.</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Forum - SakhiHealth</title>
+    <link rel="stylesheet" href="ss.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #98117f; 
+            background-image: url('ngo.jpeg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgba(156, 29, 71, 0.8); 
+            padding: 20px;
+            text-align: center;
+            color: #b99faf;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #c49cb0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h2 {
+            color: #9a0b3a;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        .forum-categories, .join-discussion {
+            margin-top: 30px;
+        }
+
+        .forum-categories h3, .join-discussion h3 {
+            color: #a01241;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .forum-categories ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .forum-categories li {
+            background-color: #e9d6dc;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .forum-categories li:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .forum-categories a {
+            text-decoration: none;
+            color: #FF4081;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .forum-categories a:hover {
+            color: #D5006D;
+        }
+
+        .join-discussion p {
+            font-size: 1.1em;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .join-discussion a {
+            color: #f3eeee;
+            background-color: #FF4081;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .join-discussion a:hover {
+            background-color: #9f959a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 64, 129, 0.8); 
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .footer-home-link {
+            color: #e7dcdc;
+            font-size: 1.1em;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #D5006D;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-home-link:hover {
+            background-color: #A01448;
+        }
+
+    
+        .join-discussion p + p {
+            margin-top: 20px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .forum-categories li {
+                font-size: 1rem;
+            }
+
+            .forum-categories a {
+                font-size: 1rem;
+            }
+
+            footer {
+                font-size: 1rem;
+            }
+        }
+
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Community Forum</h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Connect and Share</h2>
+            <p>Our Community Forum provides a safe space for women to discuss health topics, share experiences, and support each other.</p>
+
+            
+            <section class="forum-categories">
+                <h3>Popular Categories</h3>
+                <ul>
+                    <li><a href="#mental-health">Mental Health and Wellness</a></li>
+                    <li><a href="#maternal-health">Maternal and Child Health</a></li>
+                    <li><a href="#nutrition">Nutrition and Fitness</a></li>
+                    <li><a href="#chronic-illness">Chronic Illness Support</a></li>
+                </ul>
+            </section>
+
+            
+            <section class="join-discussion">
+                <h3>Join the Conversation</h3>
+                <p><a href="signup_forum.html">Sign up</a> to create an account and join discussions</p>
+                <p>Be part of a supportive community of women sharing valuable insights and resources!</p>
+            </section>
+        </div>
+    </section>
+
+    
+        <a href="ss.html" class="footer-home-link">Home</a>
+    
+</body>
+</html>

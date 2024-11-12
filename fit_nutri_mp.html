@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Fitness & Nutrition - SakhiHealth</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #e448e4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #e286b6;
+            color: rgb(71, 9, 58);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Titles */
+        h2 {
+            color: #9f2263;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Section Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Individual Section */
+        .section {
+            padding: 15px;
+            background-color: #fdf2f8;
+            border-radius: 8px;
+        }
+
+        .section h3 {
+            color: #d0478e;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Cards */
+        .card {
+            padding: 10px;
+            background-color: #e6d7f7; /* Lavender background */
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card iframe {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.1em;
+            color: #d53286;
+        }
+
+        /* Progress Tracker */
+        .progress-tracker {
+            background-color: #f8d7e3;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            background-color: #f8d7e3;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .progress-bar {
+            background-color: #d54c93;
+            height: 20px;
+            border-radius: 8px;
+            width: 0%;
+            color: white;
+            text-align: center;
+        }
+
+        /* CTA Button */
+        .cta {
+            display: block;
+            background-color: #9b2964;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+
+        .cta:hover {
+            background-color: #cc4088;
+        }
+
+        /* Chat Box */
+        .chat-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-container .ai-chat-box,
+        .chat-container .user-chat-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .chat-container .ai-chat-box .img,
+        .chat-container .user-chat-box .img {
+            margin-right: 10px;
+        }
+
+        .chat-container .ai-chat-box .text,
+        .chat-container .user-chat-box .text {
+            max-width: 80%;
+            padding: 8px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        #prompt {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        #btn {
+            background-color: #9a2d65;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: #b3005b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personalized Fitness & Nutrition Recommendations</h1>
+    </header>
+
+    <div class="container">
+        <h2>Get AI-Powered Recommendations for Your Fitness & Nutrition Goals</h2>
+        
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <input type="text" id="prompt" placeholder="Tell us your fitness goal or health issue..." />
+            <button id="btn">Get Recommendations</button>
+        </div>
+
+        <!-- Workout Videos and Tips -->
+        <div class="grid">
+            <div class="section">
+                <h3>Workout Videos</h3>
+                <div class="card">
+                    <iframe src="https://www.youtube.com/embed/YQHsXMglC9A" title="Cardio Workout" allowfullscreen></iframe>
+                    <div class="card-title">20-Minute Cardio Blast</div>
+                    <p>Boost your energy and burn calories with this quick cardio workout.</p>
+                </div>
+                <div class="card">
+                    <iframe src="https://www.youtube.com/embed/kJQP7kiw5Fk" title="Strength Training" allowfullscreen></iframe>
+                    <div class="card-title">Full-Body Strength</div>
+                    <p>Strengthen muscles and improve endurance with this guided routine.</p>
+                </div>
+            </div>
+
+            <!-- Nutrition Advice & Meal Planning -->
+            <div class="section">
+                <h3>Nutrition Advice & Meal Planning</h3>
+                <div class="card">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Healthy Breakfast Tips" allowfullscreen></iframe>
+                    <div class="card-title">Healthy Breakfast Ideas</div>
+                    <p>Start your day with a nutritious smoothie and other breakfast ideas.</p>
+                </div>
+                <div class="card">
+                    <iframe src="https://www.youtube.com/embed/3JZ_D3ELwOQ" title="Balanced Diet Meal Prep" allowfullscreen></iframe>
+                    <div class="card-title">Balanced Meal Prep Tips</div>
+                    <p>Plan your meals with a mix of proteins, carbs, and healthy fats.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Progress Tracker -->
+        <div class="section progress-tracker">
+            <h3>Your Weekly Progress Tracker</h3>
+            <p>Track your weekly fitness and nutrition goals below:</p>
+            <input type="number" id="progress-input" placeholder="Enter progress percentage (0-100)" min="0" max="100" style="width: 100%; padding: 8px;">
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar">0% Complete</div>
+            </div>
+            <button class="cta" onclick="updateProgress()">Update Progress</button>
+        </div>
+
+        <!-- Stress Relief Section -->
+        <div class="section stress-relief-video">
+            <h3>Stress Relief Exercises</h3>
+            <p>Explore quick, effective exercises to reduce stress and improve mental well-being.</p>
+            <iframe src="https://www.youtube.com/embed/abcdEFGhijK" title="Stress Relief Yoga" allowfullscreen></iframe>
+            <p>Take a few minutes each day to follow along with these guided yoga and breathing exercises.</p>
+        </div>
+
+        <!-- Back to Home Button -->
+        <a href="ss.html" class="cta">Go Back to Home</a>
+    </div>
+
+    <script>
+        let prompt = document.querySelector("#prompt");
+        let btn = document.querySelector("#btn");
+        let chatContainer = document.querySelector(".chat-container");
+        let userMessage = null;
+        let Api_Url = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDzFUvCzexQIML1As66xMYw5Yl4oPmNUGY';
+
+        function createChatBox(html, className) {
+            let div = document.createElement("div");
+            div.classList.add(className);
+            div.innerHTML = html;
+            chatContainer.appendChild(div);
+        }
+
+        btn.addEventListener("click", () => {
+            if (prompt.value !== "") {
+                let userMessage = prompt.value;
+                createChatBox(`<div class="text">${userMessage}</div>`, 'user-chat-box');
+                prompt.value = '';
+                fetch(Api_Url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        "prompt": userMessage
+                    })
+                }).then(res => res.json())
+                  .then(data => {
+                      createChatBox(`<div class="text">${data.text}</div>`, 'ai-chat-box');
+                  })
+            }
+        });
+
+        function updateProgress() {
+            let progress = document.querySelector("#progress-input").value;
+            let progressBar = document.querySelector("#progress-bar");
+            progressBar.style.width = `${progress}%`;
+            progressBar.innerHTML = `${progress}% Complete`;
+        }
+       
+
+
+
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Fitness & Nutrition - SakhiHealth</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #e448e4;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #e286b6;
+            color: rgb(71, 9, 58);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Main Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section Titles */
+        h2 {
+            color: #9f2263;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Section Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /* Individual Section */
+        .section {
+            padding: 15px;
+            background-color: #fdf2f8;
+            border-radius: 8px;
+        }
+
+        .section h3 {
+            color: #d0478e;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        /* Cards */
+        .card {
+            padding: 10px;
+            background-color: #e6d7f7; /* Lavender background */
+            border-radius: 8px;
+            margin-top: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card iframe {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .card-title {
+            font-size: 1.1em;
+            color: #d53286;
+        }
+
+        /* Progress Tracker */
+        .progress-tracker {
+            background-color: #f8d7e3;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .progress-bar-container {
+            width: 100%;
+            background-color: #f8d7e3;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .progress-bar {
+            background-color: #d54c93;
+            height: 20px;
+            border-radius: 8px;
+            width: 0%;
+            color: white;
+            text-align: center;
+        }
+
+        /* CTA Button */
+        .cta {
+            display: block;
+            background-color: #9b2964;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+
+        .cta:hover {
+            background-color: #cc4088;
+        }
+
+        /* Chat Box */
+        .chat-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: white;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .chat-container .ai-chat-box,
+        .chat-container .user-chat-box {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .chat-container .ai-chat-box .img,
+        .chat-container .user-chat-box .img {
+            margin-right: 10px;
+        }
+
+        .chat-container .ai-chat-box .text,
+        .chat-container .user-chat-box .text {
+            max-width: 80%;
+            padding: 8px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        #prompt {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        #btn {
+            background-color: #9a2d65;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: #b3005b;
+        }
+    </style>
+</head>
+<body> 
+       
+        <div class="section">
+            <h3>Fitness & Nutrition Calculator</h3>
+            <iframe src="https://www.calculator.net/calorie-calculator.html" title="Calorie Calculator" width="100%" height="500px"></iframe>
+        </div>
+
+
+       
+
+</body>
+</html>
+

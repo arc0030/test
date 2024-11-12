@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career and Skill Development - SakhiHealth</title>
+    <style>
+        
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('ngo.jpeg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: rgba(226, 42, 140, 0.85);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 36px;
+            font-weight: bold;
+            border-bottom: 5px solid #ff61df;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            max-width: 1100px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #3A3A3A;
+        }
+
+        p {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 40px;
+        }
+
+        .skill-resources, .mentorship-programs {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-resources:hover, .mentorship-programs:hover {
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .skill-resources::before, .mentorship-programs::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f1eaea;
+            z-index: -1;
+            opacity: 0.4;
+            transition: opacity 0.3s ease;
+        }
+
+        .skill-resources:hover::before, .mentorship-programs:hover::before {
+            opacity: 0.6;
+        }
+
+        .skill-resources h3, .mentorship-programs h3 {
+            font-size: 28px;
+            color: #e054c1;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+
+        .skill-resources ul, .mentorship-programs ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skill-resources li, .mentorship-programs li {
+            font-size: 18px;
+            margin: 12px 0;
+            color: #444;
+            display: flex;
+            align-items: center;
+        }
+
+        .skill-resources a, .mentorship-programs a {
+            color: #e12a8c;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .skill-resources a:hover, .mentorship-programs a:hover {
+            color: #ff61df;
+        }
+
+        .skill-resources li::before, .mentorship-programs li::before {
+            content: '\2022'; 
+            font-size: 30px;
+            color: #e054c1;
+            margin-right: 15px;
+        }
+
+        footer {
+            background-color: #f1eaea;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer-home-link {
+            color: #c840a4;
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 8px 16px;
+            background-color: #fff;
+            border-radius: 4px;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .footer-home-link:hover {
+            background-color: #ff61be;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 15px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            .skill-resources, .mentorship-programs {
+                padding: 20px;
+            }
+
+            .skill-resources h3, .mentorship-programs h3 {
+                font-size: 24px;
+            }
+
+            footer {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Career and Skill Development
+    </header>
+
+    <section>
+        <div>
+            <h2>Empower Your Career</h2>
+            <p>Explore resources to boost your skills and career in health and wellness fields and beyond.</p>
+
+            <section class="skill-resources">
+                <h3>Skill-Building Resources</h3>
+                <ul>
+                    <li><a href="https://www.udemy.com/courses/business/health/" target="_blank">Health and Wellness Courses (Udemy)</a> - Courses on wellness coaching, mental health, and more.</li>
+                    <li><a href="https://www.coursera.org/browse/health" target="_blank">Health Specializations (Coursera)</a> - Wide range of certifications in public health, nutrition, and healthcare management.</li>
+                    <li><a href="https://www.linkedin.com/learning/" target="_blank">LinkedIn Learning</a> - Courses to improve professional skills, from project management to self-care.</li>
+                </ul>
+            </section>
+
+            
+            <section class="mentorship-programs">
+                <h3>Mentorship and Career Guidance</h3>
+                <p>Connect with mentors in the health and wellness industry:</p>
+                <ul>
+                    <li><a href="https://www.womenwhocode.com/" target="_blank">Women Who Code</a> - Network with women in tech and related fields.</li>
+                    <li><a href="https://www.mentoring.org/" target="_blank">National Mentoring Partnership</a> - Find local mentoring programs for career growth.</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <a href="ss.html" class="footer-home-link">Home</a>
+    </footer>
+</body>
+</html>

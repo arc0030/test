@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SakhiHealth - Period Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styling */
+        body {
+            font-family: 'Gaglin', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('pt.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+            color: #C71585;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        header nav a {
+            color: #C71585;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin-right: 15px;
+        }
+
+        header nav a:hover {
+            color: #ea0769;
+        }
+
+        /* Period Tracker Section Styling */
+        .period-tracker {
+            width: 100%;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .period-tracker h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #8B008B;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .period-tracker label {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .period-tracker input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+        }
+
+        .period-tracker button {
+            background-color: #C71585;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .period-tracker button:hover {
+            background-color: #ea0769;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fbe4ec;
+            border-radius: 10px;
+            display: none;
+        }
+
+        .result h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #C71585;
+            font-size: 1.6em;
+            margin-bottom: 10px;
+        }
+
+        .result p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: auto;
+            padding: 20px 0;
+            background-color: #ffd1e1;
+            text-align: center;
+            color: #8B008B;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+            border-radius: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SakhiHealth</h1>
+        <nav>
+            <a href="contact.html">Contact</a>
+            <a href="ss.html">HOME</a
+        </nav>
+    </header>
+
+    <div class="period-tracker">
+        <h2>Track Your Period</h2>
+        <label for="start">Enter the start date of your last period:</label>
+        <input type="date" id="start" name="start">
+        
+        <label for="cycle">Enter your average cycle length (in days):</label>
+        <input type="number" id="cycle" name="cycle" placeholder="e.g., 28">
+
+        <button onclick="trackPeriod()">Calculate</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function trackPeriod() {
+            const startDate = new Date(document.getElementById('start').value);
+            const cycleLength = parseInt(document.getElementById('cycle').value);
+
+            if (isNaN(startDate) || isNaN(cycleLength)) {
+                alert("Please enter a valid date and cycle length.");
+                return;
+            }
+
+            // Calculate dates
+            const ovulationDate = new Date(startDate);
+            ovulationDate.setDate(startDate.getDate() + cycleLength / 2);
+
+            const nextPeriodStart = new Date(startDate);
+            nextPeriodStart.setDate(startDate.getDate() + cycleLength);
+
+            // Display result
+            const resultDiv = document.getElementById('result');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `
+                <h3>Results:</h3>
+                <p>Next Period Start Date: ${nextPeriodStart.toDateString()}</p>
+                <p>Estimated Ovulation Date: ${ovulationDate.toDateString()}</p>
+                <p>Fertile Window: ${new Date(ovulationDate.getTime() - 4 * 24 * 60 * 60 * 1000).toDateString()} - ${new Date(ovulationDate.getTime() + 1 * 24 * 60 * 60 * 1000).toDateString()}</p>
+            `;
+        }
+    </script>
+    
+    <footer>
+    </footer>
+</body>
+</html>

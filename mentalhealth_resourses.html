@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Resources - SakhiHealth</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importing Gaglin and Georgia fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Gaglin&display=swap" rel="stylesheet">
+    <!-- Importing Dancing Script font for cursive effect -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Gaglin', 'Georgia', serif;
+            background-color: #f9e8f2;
+            color: #333;
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+            background-image: url('mental.avif'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: rgba(218, 26, 128, 0.9);
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            color: #d7d8eb;
+            margin: 0;
+            font-family: 'Dancing Script', cursive; /* Applying the Dancing Script cursive font */
+            padding: 20px;
+            background-color: #951557; /* Added background behind heading */
+            border-radius: 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'Gaglin', serif; /* Changed font to Gaglin */
+            color: #C71585;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        section {
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateX(-100%);
+            animation: slideIn 0.6s forwards;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .section-content {
+            background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+            border-radius: 12px;
+            padding: 25px;
+            margin: 15px 0;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .section-content:hover {
+            transform: scale(1.02);
+        }
+
+        .section-content h3 {
+            color: #8B008B;
+            margin-bottom: 12px;
+        }
+
+        .section-content p, .section-content ul {
+            color: #555;
+        }
+
+        .section-content ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .section-content ul li {
+            background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
+            margin: 12px 0;
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section-content ul li:hover {
+            transform: translateX(8px);
+            background-color: rgba(0, 0, 0, 0); /* Fully transparent on hover */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-content ul li::before {
+            content: "★";
+            color: #C71585;
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin: 30px auto;
+            padding: 12px 25px;
+            background-color: #951557;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .back-home:hover {
+            background-color: #C71585;
+        }
+
+        footer {
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgba(201, 32, 122, 0.9);
+            text-align: center;
+            color: #8B008B;
+            margin-top: auto;
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mental Health Resources</h1>
+    </header>
+
+    <section class="container">
+        <h2>Support for Mental Well-being</h2>
+        <p>At SakhiHealth, we prioritize your mental health. Explore our mental wellness tips, guides, and access our carefully curated support network to help you achieve balance and peace of mind.</p>
+
+        <div class="section-content">
+            <h3>Self-Care Tips</h3>
+            <ul>
+                <li><strong>Mindfulness Practice:</strong> Spend 10-15 minutes each day focusing on your breathing. Mindfulness can reduce stress and increase overall well-being.</li>
+                <li><strong>Exercise Regularly:</strong> Physical activity releases endorphins and can significantly boost your mood. Try activities like walking, yoga, or dancing.</li>
+                <li><strong>Sleep Well:</strong> Ensure you get 7-9 hours of sleep each night. Consistent, quality sleep improves mental clarity and emotional regulation.</li>
+                <li><strong>Limit Screen Time:</strong> Set boundaries for digital consumption. Reducing screen time, especially on social media, can alleviate anxiety.</li>
+                <li><strong>Journaling:</strong> Writing down your thoughts can be a therapeutic exercise. Consider journaling to process your emotions and set daily goals.</li>
+            </ul>
+        </div>
+
+        <div class="section-content">
+            <h3>Online Counseling Services</h3>
+            <p>Access professional help from the comfort of your home. These platforms offer licensed therapists and counselors who specialize in women's mental health:</p>
+            <ul>
+                <li><a href="https://www.betterhelp.com" target="_blank">BetterHelp</a> - Online counseling services with licensed therapists for general mental health support.</li>
+                <li><a href="https://www.talkspace.com" target="_blank">Talkspace</a> - Provides therapy and psychiatry services with options for flexible communication (text, video, or audio).</li>
+                <li><a href="https://www.7cups.com" target="_blank">7 Cups</a> - Connects individuals with trained listeners and licensed counselors for emotional support.</li>
+            </ul>
+        </div>
+
+        <div class="section-content">
+            <h3>Self-Assessment Tools</h3>
+            <p>Use these assessment tools to understand more about your mental health. These are not substitutes for professional advice but can help guide you:</p>
+            <ul>
+                <li><a href="https://www.psycom.net/depression-test/" target="_blank">Depression Screening</a> - Evaluate if you may be experiencing symptoms of depression.</li>
+                <li><a href="https://www.anxietycentre.com/anxiety-tests/self-test-anxiety.shtml" target="_blank">Anxiety Self-Test</a> - Determine if you may have anxiety-related symptoms.</li>
+                <li><a href="https://www.psychologytoday.com/us/tests/health/stress-level-test" target="_blank">Stress Level Test</a> - Assess your current stress levels and identify potential areas for improvement.</li>
+            </ul>
+        </div>
+
+        <div class="section-content">
+            <h3>Community Support Networks</h3>
+            <p>Connecting with others can offer emotional relief and build resilience. Here are communities and networks focused on supporting women’s mental health:</p>
+            <ul>
+                <li><a href="https://www.supportgroups.com/" target="_blank">SupportGroups.com</a> - Join groups based on specific mental health conditions and connect with others for mutual support.</li>
+                <li><a href="https://www.momentsmilestones.org" target="_blank">Moments & Milestones</a> - A support network for mothers dealing with mental health challenges and postpartum issues.</li>
+                <li><a href="https://www.womenattherefuge.org" target="_blank">Women at the Refuge</a> - A community for women overcoming mental health and trauma-related challenges.</li>
+            </ul>
+        </div>
+
+        <a href="ss.html" class="back-home">Back to Home</a>
+    </section>
+
+    <footer>
+    
+    </footer>
+</body>
+</html>

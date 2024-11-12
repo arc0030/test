@@ -1,0 +1,15 @@
+{
+    "healthcareProviders": [
+      {
+        "name": "Women's Health Clinic",
+        "address": "123 Main St, Anytown, USA",
+        "services": ["Gynecology", "Prenatal Care", "Menopause Management"]
+      },
+      {
+        "name": "Community Health Center",
+        "address": "456 Elm St, Anytown, USA",
+        "services": ["Family Planning", "STD Testing", "Wellness Checkups"]
+      }
+    ]
+  }
+  

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SakhiHealth - Women's Healthcare</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        /* Universal Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .georgia-bold-italic {
+            font-family: 'Georgia', serif;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #fce4ec, #f3e5f5, #ede7f6);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #e1bee7;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-weight: 700;
+            color: #6a1b9a;
+            font-size: 1.8em;
+        }
+
+        header nav a {
+            color: #6a1b9a;
+            font-weight: 600;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        header nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            text-align: center;
+            padding: 120px 20px 80px;
+            background: url('your_health_yourpriority.png') no-repeat center center;
+            background-size: cover;
+            color: black;
+            border-radius: 15px;
+            margin-top: 80px;
+            max-width: 1100px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .hero h2 {
+            font-size: 2.8em;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            padding: 12px 30px;
+            background-color: #d81b60;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ad1457;
+        }
+
+        /* Features Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 40px 20px;
+            max-width: 1100px;
+        }
+
+        /* Feature Card */
+        .feature-card {
+            background: #fff;
+            border: 2px solid #ce93d8;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card .material-icons {
+            font-size: 48px;
+            color: #d81b60;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5em;
+            color: #ab47bc;
+            font-weight: 600;
+            margin: 10px 0 15px;
+        }
+
+        .feature-card p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .feature-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer Styling */
+        footer {
+            width: 100%;
+            padding: 20px 0;
+            background: #6a1b9a;
+            text-align: center;
+            color: #fff;
+            font-size: 0.9em;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.2em;
+            }
+
+            header h1 {
+                font-size: 1.6em;
+            }
+
+            header nav a {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SakhiHealth</h1>
+        <nav>
+            <a class="georgia-bold-italic" href="features.html">Features</a>
+            <a class="georgia-bold-italic" href="about.html">About</a>
+            <a class="georgia-bold-italic" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="hero">
+        <h2>Your Health, Our Priority</h2>
+        <p>At SakhiHealth, we empower women by providing personalized, supportive health resources. Track your wellness, access healthcare, and find guidance all in one place.</p>
+        <a href="about.html">
+            <button class="cta-button">Discover More</button>
+        </a>
+    </section>
+
+    <section class="features" id="features">
+    
+        <div class="feature-card" onclick="window.location.href='fit_nutri_mp.html'">
+            <img src="fitness.jpeg" alt="Fitness & Nutrition">
+            <span class="material-icons">self_improvement</span>
+            <h3 class="georgia-bold-italic">Fitness & Nutrition</h3>
+            <p class="georgia-bold-italic">Stay fit, eat healthy, and live your best life with personalized fitness plans and nutrition advice.</p>
+        </div>
+        <div class="feature-card" onclick="window.location.href='period-tracker.html'">
+            <img src="perdimages.jpeg" alt="Period Tracker">
+            <span class="material-icons">calendar_today</span>
+            <h3 class="georgia-bold-italic">Period Tracker</h3>
+            <p class="georgia-bold-italic">Track your menstrual cycle with ease and stay informed about your reproductive health.</p>
+        </div>
+        <div class="feature-card" onclick="window.location.href='ngo.html'">
+            <img src="ngeoin.jpeg" alt="NGO & Govt. Policies">
+            <span class="material-icons">groups</span>
+            <h3 class="georgia-bold-italic">NGO & Govt. Policies</h3>
+            <p class="georgia-bold-italic">Learn about support and resources from NGOs and government policies for women’s health.</p>
+        </div>
+        <div class="feature-card" onclick="window.location.href='chatbot.html'">
+            <img src="chatbot.jpeg" alt="Chatbot Assistance">
+            <span class="material-icons">chat</span>
+            <h3 class="georgia-bold-italic">Chatbot Assistance</h3>
+            <p class="georgia-bold-italic">Engage with our AI-powered chatbot for personalized healthcare advice.</p>
+        </div>
+        <div class="feature-card" onclick="window.location.href='appointments.html'">
+            <img src="docappoint.jpeg" alt="Doctor Appointments">
+            <span class="material-icons">medical_services</span>
+            <h3 class="georgia-bold-italic">Doctor Appointments</h3>
+            <p class="georgia-bold-italic">Book doctor appointments and consult specialists remotely for personalized care.</p>
+        </div>
+    
+        <div class="feature-card" onclick="window.location.href='mentalhealth_resourses.html'">
+            <img src="manta.jpg" alt="Mental Health Resources">
+            <span class="material-icons">healing</span> <!-- Changed to 'healing' for mental health -->
+            <h3 class="georgia-bold-italic">Mental Health Resources</h3>
+            <p class="georgia-bold-italic">We provide resources, support, and expert advice to help you prioritize your mental well-being.</p>
+        </div>
+        
+        <div class="feature-card" onclick="window.location.href='health news & update.html'">
+            <img src="health.jpeg" alt="Health News & Update">
+            <span class="material-icons">rss_feed</span> <!-- Changed to 'rss_feed' for news updates -->
+            <h3 class="georgia-bold-italic">Health & News Updates</h3>
+            <p class="georgia-bold-italic">Explore trusted health tips, expert advice, and the latest news about women’s wellness, government policies, and advancements in healthcare.</p>
+        </div>
+        <div class="feature-card" onclick="window.location.href='community_forum.html'">
+            <img src="community.webp" alt="Community Forum">
+            <span class="material-icons">people</span> <!-- Changed to 'people' for community forum -->
+            <h3 class="georgia-bold-italic">Community Forum</h3>
+            <p class="georgia-bold-italic">Connect, share, and grow with a vibrant community of women supporting women.</p>
+        </div>
+        <div class="feature-card" onclick="window.location.href='education_resources.html'">
+            <img src="education.webp" alt="Educational Resources">
+            <span class="material-icons">school</span> <!-- Changed to 'school' for educational resources -->
+            <h3 class="georgia-bold-italic">Educational Resources</h3>
+            <p class="georgia-bold-italic">Discover a treasure trove of expertly curated resources designed to educate, inform, and empower women.</p>
+        </div>
+        <div class="feature-card" onclick="window.location.href='selfass.html'">
+            <img src="selfassesimages.jpeg" alt="Self Assessment">
+            <span class="material-icons">self_improvement</span>
+            <h3 class="georgia-bold-italic">Self-Assessment</h3>
+            <p class="georgia-bold-italic">Evaluate your health with interactive self-assessment tools for personalized insights.</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SakhiHealth - Impact</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importing fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+            background-color: #f4f1f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0 15px;
+        }
+
+        /* Header styling */
+        header {
+            width: 100%;
+            background-color: #f9d8d2;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+            color: #e1368e;
+            margin: 0;
+        }
+
+        header nav a {
+            color: #762d98;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ea0769;
+        }
+
+        /* Main Section styling */
+        .impact-section {
+            width: 100%;
+            max-width: 1000px;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .impact-section h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #d33a7f;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+
+        .impact {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(255, 182, 193, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            animation: flicker 1.5s infinite alternate ease-in-out;
+        }
+
+        .impact:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(203, 57, 149, 0.3);
+        }
+
+        /* Flicker Animation */
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+                box-shadow: 0px 0px 5px rgba(255, 0, 150, 0.7);
+            }
+            50% {
+                opacity: 0.9;
+                box-shadow: 0px 0px 20px rgba(212, 69, 160, 0.3);
+            }
+        }
+
+        .impact h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6em;
+            color: #e92484;
+            margin-bottom: 10px;
+        }
+
+        .impact p {
+            color: #333;
+            line-height: 1.6;
+            font-size: 1em;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: auto;
+            padding: 20px 0;
+            background-color: #f9d8d2;
+            text-align: center;
+            color: #de0d72;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Our Impact</h1>
+            <nav>
+                <a href="ss.html">Home</a>
+                
+                <a href="contact.html">Contact</a>
+            
+            </nav>
+        </div>
+    </header>
+
+    <section class="impact-section">
+        <h2>Empowering Women, Improving Lives</h2>
+        
+        <div class="impact">
+            <h3>Enhanced Healthcare Access</h3>
+            <p>By providing a centralized platform, SakhiHealth has improved healthcare access for women, especially in rural and underserved areas, offering essential resources and guidance for reproductive health, mental wellness, and preventive care.</p>
+        </div>
+        
+        <div class="impact">
+            <h3>Personalized Health Insights</h3>
+            <p>Our AI-driven tools empower women with personalized health insights, helping them to make informed decisions. These insights have been critical in early detection, prevention, and improved self-care practices among our users.</p>
+        </div>
+
+        <div class="impact">
+            <h3>Mental Health Awareness</h3>
+            <p>SakhiHealth has played a vital role in promoting mental health awareness. Through resources, community support, and access to professional advice, we are helping to break down the stigma surrounding mental health issues.</p>
+        </div>
+
+        <div class="impact">
+            <h3>Community Empowerment</h3>
+            <p>Our community forum has become a safe space where women can share experiences, seek advice, and connect with others. This sense of community has empowered users to take proactive steps in their health journeys.</p>
+        </div>
+
+        <div class="impact">
+            <h3>Promotion of Preventive Care</h3>
+            <p>SakhiHealth emphasizes preventive care by offering regular health tips, nutrition guides, and lifestyle advice, helping users stay healthy and address issues before they become severe.</p>
+        </div>
+        
+        <div class="impact">
+            <h3>Educational & Career Advancement</h3>
+            <p>Our platform provides resources on career development and skill-building, helping women advance in their professional lives and achieve economic independence.</p>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+</body>
+</html>

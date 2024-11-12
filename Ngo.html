@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SakhiHealth - Women's Health Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gagalin&family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9e8f2;
+            background-image: url('features.avif');
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Header Styles */
+        header {
+            width: 100%;
+            background-color: rgba(255, 182, 193, 0.9);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Gagalin', sans-serif;
+            font-size: 3em;
+            color: #8B008B;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            color: #555;
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        /* Content Container */
+        .content {
+            max-width: 900px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            text-align: center;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #8B008B;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        /* Feature Box Styling */
+        li {
+            background-color: #fbe4ec;
+            margin: 10px 0;
+            padding: 20px;
+            border-radius: 12px;
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+            background-color: #e8c4d5;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        li::before {
+            content: "★";
+            color: #C71585;
+            font-size: 1.3em;
+            margin-right: 15px;
+        }
+
+        .ngo, .policy {
+            font-weight: bold;
+            color: #C71585;
+            font-size: 1.2em;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: auto;
+            padding: 20px 0;
+            text-align: center;
+            color: #8B008B;
+            font-family: 'Gagalin', sans-serif;
+            font-size: 1.2em;
+        }
+
+        /* Go Back Button Styling */
+        .back-home {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #8B008B;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 6px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-home:hover {
+            background-color: #C71585;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to SakhiHealth</h1>
+        <p>Your trusted platform for women’s healthcare solutions</p>
+    </header>
+    
+    <div class="content">
+        <section class="section">
+            <h2>NGOs for Women's Health</h2>
+            <ul>
+                <li><span class="ngo">Smile Foundation</span> - Works towards providing healthcare access to underserved women and children.</li>
+                <li><span class="ngo">SEWA (Self-Employed Women's Association)</span> - Focuses on women’s health and empowerment through various health initiatives.</li>
+                <li><span class="ngo">CARE India</span> - Aims to improve maternal health and offers reproductive health services to women.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Government Policies for Women's Health</h2>
+            <ul>
+                <li><span class="policy">Pradhan Mantri Matru Vandana Yojana</span> - Maternity benefit program providing financial aid to pregnant and lactating women.</li>
+                <li><span class="policy">Janani Suraksha Yojana</span> - A scheme aimed at reducing maternal and neonatal mortality by promoting institutional deliveries.</li>
+                <li><span class="policy">Rashtriya Kishor Swasthya Karyakram</span> - Focuses on adolescent health, including menstrual hygiene and nutrition.</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <a href="ss.html" class="back-home">Go Back to Home</a>
+    </footer>
+</body>
+</html>

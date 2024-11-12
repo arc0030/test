@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health News and Updates - SakhiHealth</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Georgia', serif;  
+            background-color: #521769;  
+            background-image: url('feature.jpg'); 
+            background-size: cover;  
+            background-position: center; 
+            background-attachment: fixed; 
+            color: #ffeaea;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: rgba(255, 117, 160, 0.8);  
+            padding: 40px 0;
+            text-align: center;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #3f0541;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: #9b3a6f; 
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* Feature Box Styling */
+        .section-content {
+            background-color: rgba(255, 182, 193, 0.85);  
+            border-radius: 15px;
+            padding: 30px;
+            margin: 15px 0;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .section-content:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-content h3 {
+            color: #8B008B;  /* Deep pink */
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .section-content p, .section-content ul {
+            color: #0b0909;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .section-content ul {
+            list-style-type: disc;
+            padding-left: 25px;
+        }
+
+        /* Button Styling */
+        .back-home {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ed0c44;  /* Vibrant pink */
+            color: rgb(166, 146, 146);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            text-align: center;
+            transition: all 0.3s ease-in-out;
+            font-size: 1.1em;
+        }
+
+        .back-home:hover {
+            background-color: #a36879;  /* Darker pink */
+            transform: scale(1.05);
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Footer Styling */
+        footer {
+            width: 100%;
+            padding: 20px 0;
+            background-color: rgba(255, 117, 160, 0.8);  /* Soft Pink */
+            text-align: center;
+            color: #fff;
+            margin-top: auto;
+        }
+
+        footer p {
+            font-size: 1em;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            .section-content {
+                padding: 20px;
+            }
+
+            .back-home {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            .section-content {
+                padding: 15px;
+            }
+
+            .back-home {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Health News and Updates</h1>
+    </header>
+
+    <section class="container">
+        <h2>Stay Informed on Women’s Health</h2>
+        <p>Stay updated on the latest in women’s health, from medical research to new government policies and everything in between.</p>
+
+        <!-- News Articles Section -->
+        <div class="section-content">
+            <h3>Recent Articles</h3>
+            <ul>
+                <li><a href="https://www.who.int/news-room" target="_blank">WHO: Women's Health and Rights Updates</a> - Articles covering global health developments and initiatives for women.</li>
+                <li><a href="https://www.healthline.com/womens-health" target="_blank">Healthline: Women's Health News</a> - Timely insights on women's health, fitness, and mental wellness.</li>
+                <li><a href="https://www.cdc.gov/women/" target="_blank">CDC: Women's Health Topics</a> - Updates from the Centers for Disease Control on issues affecting women in the U.S.</li>
+                <li><a href="https://www.nytimes.com/section/well/womens-health" target="_blank">NY Times: Women's Health Section</a> - In-depth articles on women’s health trends and research.</li>
+            </ul>
+        </div>
+
+        <!-- Health Events Section -->
+        <div class="section-content">
+            <h3>Upcoming Health Events</h3>
+            <p>Join us for the following virtual and in-person health events:</p>
+            <ul>
+                <li><strong>Women’s Health Symposium:</strong> December 10, 2024. A virtual conference featuring leading experts on women’s health issues.</li>
+                <li><strong>International Women's Day Summit:</strong> March 8, 2025. A global event to discuss gender equality and women’s health rights.</li>
+                <li><strong>Annual Wellness Expo:</strong> April 20, 2025. Health workshops, screenings, and resources tailored for women.</li>
+            </ul>
+        </div>
+
+        <a href="ss.html" class="back-home">Back to Home</a>
+    </section>
+
+   
+</body>
+</html>
